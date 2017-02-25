@@ -7,3 +7,6 @@ C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletr
 C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.csproj.GenerateResource.Cache
 C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.exe
 C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.pdb
+C:\Users\davia\cursoCSharpIII\CaixaEletronico\bin\Release\CaixaEletronico.exe.config
+C:\Users\davia\cursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.exe
+C:\Users\davia\cursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.pdb
