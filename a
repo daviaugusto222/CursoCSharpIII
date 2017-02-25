@@ -1,0 +1,1551 @@
+[33mcommit 4c204c134109505aedb845c14af842d05a511e1f[m
+Author: davi augusto <davi augusto>
+Date:   Fri Feb 24 21:29:26 2017 -0300
+
+    Edição do segundo botão
+
+[1mdiff --git a/.vs/CaixaEletronico/v14/.suo b/.vs/CaixaEletronico/v14/.suo[m
+[1mindex 9a54456..5eeb25c 100644[m
+Binary files a/.vs/CaixaEletronico/v14/.suo and b/.vs/CaixaEletronico/v14/.suo differ
+[1mdiff --git a/CaixaEletronico/Form1.Designer.cs b/CaixaEletronico/Form1.Designer.cs[m
+[1mindex f095e97..ecd8441 100644[m
+[1m--- a/CaixaEletronico/Form1.Designer.cs[m
+[1m+++ b/CaixaEletronico/Form1.Designer.cs[m
+[36m@@ -38,6 +38,7 @@[m
+             this.destinoDaTransferencia = new System.Windows.Forms.ComboBox();[m
+             this.button4 = new System.Windows.Forms.Button();[m
+             this.button3 = new System.Windows.Forms.Button();[m
+[32m+[m[32m            this.button5 = new System.Windows.Forms.Button();[m
+             this.SuspendLayout();[m
+             // [m
+             // textoTitular[m
+[36m@@ -128,11 +129,21 @@[m
+             this.button3.UseVisualStyleBackColor = true;[m
+             this.button3.Click += new System.EventHandler(this.testeEquals_click);[m
+             // [m
+[32m+[m[32m            // button5[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.button5.Location = new System.Drawing.Point(197, 318);[m
+[32m+[m[32m            this.button5.Name = "button5";[m
+[32m+[m[32m            this.button5.Size = new System.Drawing.Size(75, 23);[m
+[32m+[m[32m            this.button5.TabIndex = 11;[m
+[32m+[m[32m            this.button5.Text = "button5";[m
+[32m+[m[32m            this.button5.UseVisualStyleBackColor = true;[m
+[32m+[m[32m            //[m[41m [m
+             // Form1[m
+             // [m
+             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);[m
+             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;[m
+             this.ClientSize = new System.Drawing.Size(284, 353);[m
+[32m+[m[32m            this.Controls.Add(this.button5);[m
+             this.Controls.Add(this.button3);[m
+             this.Controls.Add(this.button4);[m
+             this.Controls.Add(this.destinoDaTransferencia);[m
+[36m@@ -163,6 +174,7 @@[m
+         private System.Windows.Forms.ComboBox destinoDaTransferencia;[m
+         private System.Windows.Forms.Button button4;[m
+         private System.Windows.Forms.Button button3;[m
+[32m+[m[32m        private System.Windows.Forms.Button button5;[m
+     }[m
+ }[m
+ [m
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.csproj.FileListAbsolute.txt b/CaixaEletronico/obj/Release/CaixaEletronico.csproj.FileListAbsolute.txt[m
+[1mindex e740834..01a428f 100644[m
+[1m--- a/CaixaEletronico/obj/Release/CaixaEletronico.csproj.FileListAbsolute.txt[m
+[1m+++ b/CaixaEletronico/obj/Release/CaixaEletronico.csproj.FileListAbsolute.txt[m
+[36m@@ -7,3 +7,6 @@[m [mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletr[m
+ C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.csproj.GenerateResource.Cache[m
+ C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.exe[m
+ C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.pdb[m
+[32m+[m[32mC:\Users\davia\cursoCSharpIII\CaixaEletronico\bin\Release\CaixaEletronico.exe.config[m
+[32m+[m[32mC:\Users\davia\cursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.exe[m
+[32m+[m[32mC:\Users\davia\cursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.pdb[m
+[1mdiff --git a/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferences.cache b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferences.cache[m
+[1mindex 2a1057c..c4d1f77 100644[m
+Binary files a/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferences.cache and b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferences.cache differ
+[1mdiff --git a/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache[m
+[1mindex 472fda9..b5be727 100644[m
+Binary files a/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache and b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache differ
+
+[33mcommit 6b5f82bd1cdcd4406f7308335d209c8e86efe3be[m
+Author: davi augusto <davi augusto>
+Date:   Fri Feb 24 21:19:45 2017 -0300
+
+    Adição do botão
+
+[1mdiff --git a/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe.manifest b/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe.manifest[m
+[1mnew file mode 100644[m
+[1mindex 0000000..061c9ca[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe.manifest[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>[m
+[32m+[m[32m<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">[m
+[32m+[m[32m  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>[m
+[32m+[m[32m  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">[m
+[32m+[m[32m    <security>[m
+[32m+[m[32m      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">[m
+[32m+[m[32m        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>[m
+[32m+[m[32m      </requestedPrivileges>[m
+[32m+[m[32m    </security>[m
+[32m+[m[32m  </trustInfo>[m
+[32m+[m[32m</assembly>[m
+
+[33mcommit a64fde5924d9eaa6995717bd6dd47f6fad042761[m
+Author: davi augusto <davi augusto>
+Date:   Fri Feb 24 20:41:41 2017 -0300
+
+    Projeto Inicial
+
+[1mdiff --git a/.vs/CaixaEletronico/v14/.suo b/.vs/CaixaEletronico/v14/.suo[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9a54456[m
+Binary files /dev/null and b/.vs/CaixaEletronico/v14/.suo differ
+[1mdiff --git a/CaixaEletronico.sln b/CaixaEletronico.sln[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3f148c9[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico.sln[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m﻿[m
+[32m+[m[32mMicrosoft Visual Studio Solution File, Format Version 12.00[m
+[32m+[m[32m# Visual Studio 14[m
+[32m+[m[32mVisualStudioVersion = 14.0.25420.1[m
+[32m+[m[32mMinimumVisualStudioVersion = 10.0.40219.1[m
+[32m+[m[32mProject("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixaEletronico", "CaixaEletronico\CaixaEletronico.csproj", "{7FC57D83-E5E5-41CC-9897-20F578830FEE}"[m
+[32m+[m[32mEndProject[m
+[32m+[m[32mGlobal[m
+[32m+[m	[32mGlobalSection(SolutionConfigurationPlatforms) = preSolution[m
+[32m+[m		[32mDebug|Any CPU = Debug|Any CPU[m
+[32m+[m		[32mRelease|Any CPU = Release|Any CPU[m
+[32m+[m	[32mEndGlobalSection[m
+[32m+[m	[32mGlobalSection(ProjectConfigurationPlatforms) = postSolution[m
+[32m+[m		[32m{7FC57D83-E5E5-41CC-9897-20F578830FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU[m
+[32m+[m		[32m{7FC57D83-E5E5-41CC-9897-20F578830FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU[m
+[32m+[m		[32m{7FC57D83-E5E5-41CC-9897-20F578830FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU[m
+[32m+[m		[32m{7FC57D83-E5E5-41CC-9897-20F578830FEE}.Release|Any CPU.Build.0 = Release|Any CPU[m
+[32m+[m	[32mEndGlobalSection[m
+[32m+[m	[32mGlobalSection(SolutionProperties) = preSolution[m
+[32m+[m		[32mHideSolutionNode = FALSE[m
+[32m+[m	[32mEndGlobalSection[m
+[32m+[m[32mEndGlobal[m
+[1mdiff --git a/CaixaEletronico/App.config b/CaixaEletronico/App.config[m
+[1mnew file mode 100644[m
+[1mindex 0000000..88fa402[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/App.config[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8" ?>[m
+[32m+[m[32m<configuration>[m
+[32m+[m[32m    <startup>[m[41m [m
+[32m+[m[32m        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />[m
+[32m+[m[32m    </startup>[m
+[32m+[m[32m</configuration>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/Banco.cs b/CaixaEletronico/Banco.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..af209bb[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Banco.cs[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m﻿using Caelum.CaixaEletronico.Modelo.Contas;[m
+[32m+[m[32musing System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo.Bancos[m
+[32m+[m[32m{[m
+[32m+[m[32m    class Banco[m
+[32m+[m[32m    {[m
+[32m+[m[32m        private Conta[] contas = new Conta[10];[m
+[32m+[m
+[32m+[m[32m        private int quantidade;[m
+[32m+[m
+[32m+[m[32m        public void Adiciona(Conta conta)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            this.contas[this.quantidade] = conta;[m
+[32m+[m[32m            this.quantidade++;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/CaixaEletronico.csproj b/CaixaEletronico/CaixaEletronico.csproj[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7e7065c[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/CaixaEletronico.csproj[m
+[36m@@ -0,0 +1,99 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8"?>[m
+[32m+[m[32m<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">[m
+[32m+[m[32m  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />[m
+[32m+[m[32m  <PropertyGroup>[m
+[32m+[m[32m    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>[m
+[32m+[m[32m    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>[m
+[32m+[m[32m    <ProjectGuid>{7FC57D83-E5E5-41CC-9897-20F578830FEE}</ProjectGuid>[m
+[32m+[m[32m    <OutputType>WinExe</OutputType>[m
+[32m+[m[32m    <AppDesignerFolder>Properties</AppDesignerFolder>[m
+[32m+[m[32m    <RootNamespace>CaixaEletronico</RootNamespace>[m
+[32m+[m[32m    <AssemblyName>CaixaEletronico</AssemblyName>[m
+[32m+[m[32m    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>[m
+[32m+[m[32m    <FileAlignment>512</FileAlignment>[m
+[32m+[m[32m    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m[32m  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">[m
+[32m+[m[32m    <PlatformTarget>AnyCPU</PlatformTarget>[m
+[32m+[m[32m    <DebugSymbols>true</DebugSymbols>[m
+[32m+[m[32m    <DebugType>full</DebugType>[m
+[32m+[m[32m    <Optimize>false</Optimize>[m
+[32m+[m[32m    <OutputPath>bin\Debug\</OutputPath>[m
+[32m+[m[32m    <DefineConstants>DEBUG;TRACE</DefineConstants>[m
+[32m+[m[32m    <ErrorReport>prompt</ErrorReport>[m
+[32m+[m[32m    <WarningLevel>4</WarningLevel>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m[32m  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">[m
+[32m+[m[32m    <PlatformTarget>AnyCPU</PlatformTarget>[m
+[32m+[m[32m    <DebugType>pdbonly</DebugType>[m
+[32m+[m[32m    <Optimize>true</Optimize>[m
+[32m+[m[32m    <OutputPath>bin\Release\</OutputPath>[m
+[32m+[m[32m    <DefineConstants>TRACE</DefineConstants>[m
+[32m+[m[32m    <ErrorReport>prompt</ErrorReport>[m
+[32m+[m[32m    <WarningLevel>4</WarningLevel>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m[32m  <ItemGroup>[m
+[32m+[m[32m    <Reference Include="System" />[m
+[32m+[m[32m    <Reference Include="System.Core" />[m
+[32m+[m[32m    <Reference Include="System.Xml.Linq" />[m
+[32m+[m[32m    <Reference Include="System.Data.DataSetExtensions" />[m
+[32m+[m[32m    <Reference Include="Microsoft.CSharp" />[m
+[32m+[m[32m    <Reference Include="System.Data" />[m
+[32m+[m[32m    <Reference Include="System.Deployment" />[m
+[32m+[m[32m    <Reference Include="System.Drawing" />[m
+[32m+[m[32m    <Reference Include="System.Net.Http" />[m
+[32m+[m[32m    <Reference Include="System.Windows.Forms" />[m
+[32m+[m[32m    <Reference Include="System.Xml" />[m
+[32m+[m[32m  </ItemGroup>[m
+[32m+[m[32m  <ItemGroup>[m
+[32m+[m[32m    <Compile Include="Banco.cs" />[m
+[32m+[m[32m    <Compile Include="Cliente.cs" />[m
+[32m+[m[32m    <Compile Include="Conta.cs" />[m
+[32m+[m[32m    <Compile Include="ContaCorrente.cs" />[m
+[32m+[m[32m    <Compile Include="ContaInvestimento.cs" />[m
+[32m+[m[32m    <Compile Include="ContaPoupanca.cs" />[m
+[32m+[m[32m    <Compile Include="Form1.cs">[m
+[32m+[m[32m      <SubType>Form</SubType>[m
+[32m+[m[32m    </Compile>[m
+[32m+[m[32m    <Compile Include="Form1.Designer.cs">[m
+[32m+[m[32m      <DependentUpon>Form1.cs</DependentUpon>[m
+[32m+[m[32m    </Compile>[m
+[32m+[m[32m    <Compile Include="GerenciadorDeImposto.cs" />[m
+[32m+[m[32m    <Compile Include="ITributavel.cs" />[m
+[32m+[m[32m    <Compile Include="Program.cs" />[m
+[32m+[m[32m    <Compile Include="Properties\AssemblyInfo.cs" />[m
+[32m+[m[32m    <Compile Include="SaldoInsuficienteException.cs" />[m
+[32m+[m[32m    <EmbeddedResource Include="Form1.resx">[m
+[32m+[m[32m      <DependentUpon>Form1.cs</DependentUpon>[m
+[32m+[m[32m    </EmbeddedResource>[m
+[32m+[m[32m    <EmbeddedResource Include="Properties\Resources.resx">[m
+[32m+[m[32m      <Generator>ResXFileCodeGenerator</Generator>[m
+[32m+[m[32m      <LastGenOutput>Resources.Designer.cs</LastGenOutput>[m
+[32m+[m[32m      <SubType>Designer</SubType>[m
+[32m+[m[32m    </EmbeddedResource>[m
+[32m+[m[32m    <Compile Include="Properties\Resources.Designer.cs">[m
+[32m+[m[32m      <AutoGen>True</AutoGen>[m
+[32m+[m[32m      <DependentUpon>Resources.resx</DependentUpon>[m
+[32m+[m[32m    </Compile>[m
+[32m+[m[32m    <None Include="Properties\Settings.settings">[m
+[32m+[m[32m      <Generator>SettingsSingleFileGenerator</Generator>[m
+[32m+[m[32m      <LastGenOutput>Settings.Designer.cs</LastGenOutput>[m
+[32m+[m[32m    </None>[m
+[32m+[m[32m    <Compile Include="Properties\Settings.Designer.cs">[m
+[32m+[m[32m      <AutoGen>True</AutoGen>[m
+[32m+[m[32m      <DependentUpon>Settings.settings</DependentUpon>[m
+[32m+[m[32m      <DesignTimeSharedInput>True</DesignTimeSharedInput>[m
+[32m+[m[32m    </Compile>[m
+[32m+[m[32m  </ItemGroup>[m
+[32m+[m[32m  <ItemGroup>[m
+[32m+[m[32m    <None Include="App.config" />[m
+[32m+[m[32m  </ItemGroup>[m
+[32m+[m[32m  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />[m
+[32m+[m[32m  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.[m[41m [m
+[32m+[m[32m       Other similar extension points exist, see Microsoft.Common.targets.[m
+[32m+[m[32m  <Target Name="BeforeBuild">[m
+[32m+[m[32m  </Target>[m
+[32m+[m[32m  <Target Name="AfterBuild">[m
+[32m+[m[32m  </Target>[m
+[32m+[m[32m  -->[m
+[32m+[m[32m</Project>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/Cliente.cs b/CaixaEletronico/Cliente.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..499f80e[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Cliente.cs[m
+[36m@@ -0,0 +1,48 @@[m
+[32m+[m[32m﻿using System;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo.Usuarios[m
+[32m+[m[32m{[m
+[32m+[m[32m        class Cliente[m
+[32m+[m[32m        {[m
+[32m+[m[32m            public string Nome { get; set; }[m
+[32m+[m[32m            public string Rg { get; set; }[m
+[32m+[m[32m            public string cpf;[m
+[32m+[m[32m            public string endereco;[m
+[32m+[m[32m            public int idade;[m
+[32m+[m[32m            private bool EEmancipado;[m
+[32m+[m
+[32m+[m[32m            public Cliente(string nome)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                this.Nome = nome;[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            public Cliente() { }[m
+[32m+[m
+[32m+[m[32m            public bool PodeAbrirContaSozinho[m
+[32m+[m[32m            {[m
+[32m+[m[32m                get[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    var maiorDeIdade = this.idade >= 18;[m
+[32m+[m[32m                    var emancipado = (this.EEmancipado);[m
+[32m+[m[32m                    var possuiCPF = !string.IsNullOrEmpty(this.cpf);[m
+[32m+[m[32m                    return (maiorDeIdade || emancipado) && possuiCPF;[m
+[32m+[m[32m                }[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            public bool EhMaiorDeIdade()[m
+[32m+[m[32m            {[m
+[32m+[m[32m                return this.idade >= 18;[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            public override bool Equals(Object objeto)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                Cliente outroCliente = (Cliente)objeto;[m
+[32m+[m[32m                return this.Rg == outroCliente.Rg;[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            public override string ToString()[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    return "Nome: " + this.Nome + " RG: " + this.Rg;[m
+[32m+[m[32m                }[m
+[32m+[m[32m            }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/Conta.cs b/CaixaEletronico/Conta.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fa289eb[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Conta.cs[m
+[36m@@ -0,0 +1,67 @@[m
+[32m+[m[32m﻿using Caelum.CaixaEletronico.Modelo.Usuarios;[m
+[32m+[m[32musing System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo.Contas[m
+[32m+[m[32m{[m
+[32m+[m[32m    abstract class Conta[m
+[32m+[m[32m    {[m
+[32m+[m[32m        public int Numero { get; set; }[m
+[32m+[m[32m        public Cliente Titular { get; set; }[m
+[32m+[m[32m        public double Saldo { get; protected set; }[m
+[32m+[m
+[32m+[m[32m        public virtual void Deposita(double valor)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (valor > 0)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                this.Saldo += valor;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public abstract void Saca(double valor);[m
+[32m+[m
+[32m+[m[32m        public void TransferePara( Conta destino, double valor)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            this.Saca(valor);[m
+[32m+[m[32m            destino.Deposita(valor);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public double CalculaRendimentoAnual()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            double saldoNaqueleMes = this.Saldo;[m
+[32m+[m
+[32m+[m[32m            for (int i = 0; i < 12; i++)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                saldoNaqueleMes = saldoNaqueleMes * 1.007;[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            double rendimento = saldoNaqueleMes - this.Saldo;[m
+[32m+[m
+[32m+[m[32m            return rendimento;[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public override bool Equals(object obj)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if(obj != null) {[m
+[32m+[m[32m                Conta outra = (Conta)obj;[m
+[32m+[m
+[32m+[m[32m                bool numero = (this.Numero == outra.Numero);[m
+[32m+[m[32m                bool titular = (this.Titular.Equals(outra.Titular));[m
+[32m+[m
+[32m+[m[32m                return numero && titular;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else[m
+[32m+[m[32m            {[m
+[32m+[m[32m                return false;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public override string ToString()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            return "Numero: " + this.Numero;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/ContaCorrente.cs b/CaixaEletronico/ContaCorrente.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d93f245[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/ContaCorrente.cs[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32m﻿using System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo.Contas[m
+[32m+[m[32m{[m
+[32m+[m[32m   class ContaCorrente : Conta, ITributavel[m
+[32m+[m[32m    {[m
+[32m+[m[32m        private static int totalDeContas = 0;[m
+[32m+[m
+[32m+[m[32m        public ContaCorrente()[m
+[32m+[m[32m        {[m
+[32m+[m[32m                ContaCorrente.totalDeContas++;[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public int ProximaConta()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            return ContaCorrente.totalDeContas + 1;[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public double CalculaTributo()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            return this.Saldo * 0.02;[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public override void Saca(double valor)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (valor > this.Saldo )[m
+[32m+[m[32m            {[m
+[32m+[m[32m                throw new SaldoInsuficienteException("Valor do saque maior que o saldo");[m
+[32m+[m[32m            } else if(valor < 0) {[m
+[32m+[m[32m                throw new ArgumentException();[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else[m
+[32m+[m[32m            {[m
+[32m+[m[32m                this.Saldo -= (valor + 0.1);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/ContaInvestimento.cs b/CaixaEletronico/ContaInvestimento.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6b7d957[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/ContaInvestimento.cs[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m[32m﻿using System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo.Contas[m
+[32m+[m[32m{[m
+[32m+[m[32m    class ContaInvestimento : Conta, ITributavel[m
+[32m+[m[32m    {[m
+[32m+[m[32m        public double CalculaTributo()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            return this.Saldo * 0.03;[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public override void Saca(double valor)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (valor > this.Saldo)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                throw new SaldoInsuficienteException("Valor do saque maior que o saldo");[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else if (valor < 0)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                throw new ArgumentException();[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else[m
+[32m+[m[32m            {[m
+[32m+[m[32m                this.Saldo -= valor;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/ContaPoupanca.cs b/CaixaEletronico/ContaPoupanca.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6270a16[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/ContaPoupanca.cs[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m[32m﻿using System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo.Contas[m
+[32m+[m[32m{[m
+[32m+[m[32m    class ContaPoupanca : Conta, ITributavel[m
+[32m+[m[32m    {[m
+[32m+[m[32m        public double CalculaTributo()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            return this.Saldo * 0.02;[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        public override void Saca(double valor)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (valor > this.Saldo)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                throw new SaldoInsuficienteException("Valor do saque maior que o saldo");[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else if (valor < 0)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                throw new ArgumentException();[m
+[32m+[m[32m            }[m
+[32m+[m[32m            else[m
+[32m+[m[32m            {[m
+[32m+[m[32m                this.Saldo -= valor;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/Form1.Designer.cs b/CaixaEletronico/Form1.Designer.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f095e97[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Form1.Designer.cs[m
+[36m@@ -0,0 +1,168 @@[m
+[32m+[m[32m﻿namespace CaixaEletronico[m
+[32m+[m[32m{[m
+[32m+[m[32m    partial class Form1[m
+[32m+[m[32m    {[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        /// Required designer variable.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        private System.ComponentModel.IContainer components = null;[m
+[32m+[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        /// Clean up any resources being used.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>[m
+[32m+[m[32m        protected override void Dispose(bool disposing)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (disposing && (components != null))[m
+[32m+[m[32m            {[m
+[32m+[m[32m                components.Dispose();[m
+[32m+[m[32m            }[m
+[32m+[m[32m            base.Dispose(disposing);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        #region Windows Form Designer generated code[m
+[32m+[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        /// Required method for Designer support - do not modify[m
+[32m+[m[32m        /// the contents of this method with the code editor.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        private void InitializeComponent()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            this.textoTitular = new System.Windows.Forms.TextBox();[m
+[32m+[m[32m            this.textoNumero = new System.Windows.Forms.TextBox();[m
+[32m+[m[32m            this.textoSaldo = new System.Windows.Forms.TextBox();[m
+[32m+[m[32m            this.valorOperacao = new System.Windows.Forms.TextBox();[m
+[32m+[m[32m            this.button1 = new System.Windows.Forms.Button();[m
+[32m+[m[32m            this.button2 = new System.Windows.Forms.Button();[m
+[32m+[m[32m            this.comboContas = new System.Windows.Forms.ComboBox();[m
+[32m+[m[32m            this.destinoDaTransferencia = new System.Windows.Forms.ComboBox();[m
+[32m+[m[32m            this.button4 = new System.Windows.Forms.Button();[m
+[32m+[m[32m            this.button3 = new System.Windows.Forms.Button();[m
+[32m+[m[32m            this.SuspendLayout();[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // textoTitular[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.textoTitular.Location = new System.Drawing.Point(99, 65);[m
+[32m+[m[32m            this.textoTitular.Name = "textoTitular";[m
+[32m+[m[32m            this.textoTitular.Size = new System.Drawing.Size(100, 20);[m
+[32m+[m[32m            this.textoTitular.TabIndex = 0;[m
+[32m+[m[32m            this.textoTitular.Text = "Titular";[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // textoNumero[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.textoNumero.Location = new System.Drawing.Point(99, 107);[m
+[32m+[m[32m            this.textoNumero.Name = "textoNumero";[m
+[32m+[m[32m            this.textoNumero.Size = new System.Drawing.Size(100, 20);[m
+[32m+[m[32m            this.textoNumero.TabIndex = 1;[m
+[32m+[m[32m            this.textoNumero.Text = "Numero";[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // textoSaldo[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.textoSaldo.Location = new System.Drawing.Point(99, 149);[m
+[32m+[m[32m            this.textoSaldo.Name = "textoSaldo";[m
+[32m+[m[32m            this.textoSaldo.Size = new System.Drawing.Size(100, 20);[m
+[32m+[m[32m            this.textoSaldo.TabIndex = 2;[m
+[32m+[m[32m            this.textoSaldo.Text = "Saldo";[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // valorOperacao[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.valorOperacao.Location = new System.Drawing.Point(12, 193);[m
+[32m+[m[32m            this.valorOperacao.Name = "valorOperacao";[m
+[32m+[m[32m            this.valorOperacao.Size = new System.Drawing.Size(100, 20);[m
+[32m+[m[32m            this.valorOperacao.TabIndex = 3;[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // button1[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.button1.Location = new System.Drawing.Point(124, 191);[m
+[32m+[m[32m            this.button1.Name = "button1";[m
+[32m+[m[32m            this.button1.Size = new System.Drawing.Size(75, 23);[m
+[32m+[m[32m            this.button1.TabIndex = 4;[m
+[32m+[m[32m            this.button1.Text = "Depositar";[m
+[32m+[m[32m            this.button1.UseVisualStyleBackColor = true;[m
+[32m+[m[32m            this.button1.Click += new System.EventHandler(this.button1_Click);[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // button2[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.button2.Location = new System.Drawing.Point(205, 191);[m
+[32m+[m[32m            this.button2.Name = "button2";[m
+[32m+[m[32m            this.button2.Size = new System.Drawing.Size(75, 23);[m
+[32m+[m[32m            this.button2.TabIndex = 5;[m
+[32m+[m[32m            this.button2.Text = "Sacar";[m
+[32m+[m[32m            this.button2.UseVisualStyleBackColor = true;[m
+[32m+[m[32m            this.button2.Click += new System.EventHandler(this.button2_Click);[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // comboContas[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.comboContas.FormattingEnabled = true;[m
+[32m+[m[32m            this.comboContas.Location = new System.Drawing.Point(90, 27);[m
+[32m+[m[32m            this.comboContas.Name = "comboContas";[m
+[32m+[m[32m            this.comboContas.Size = new System.Drawing.Size(121, 21);[m
+[32m+[m[32m            this.comboContas.TabIndex = 7;[m
+[32m+[m[32m            this.comboContas.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // destinoDaTransferencia[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.destinoDaTransferencia.FormattingEnabled = true;[m
+[32m+[m[32m            this.destinoDaTransferencia.Location = new System.Drawing.Point(12, 229);[m
+[32m+[m[32m            this.destinoDaTransferencia.Name = "destinoDaTransferencia";[m
+[32m+[m[32m            this.destinoDaTransferencia.Size = new System.Drawing.Size(121, 21);[m
+[32m+[m[32m            this.destinoDaTransferencia.TabIndex = 8;[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // button4[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.button4.Location = new System.Drawing.Point(205, 227);[m
+[32m+[m[32m            this.button4.Name = "button4";[m
+[32m+[m[32m            this.button4.Size = new System.Drawing.Size(75, 23);[m
+[32m+[m[32m            this.button4.TabIndex = 9;[m
+[32m+[m[32m            this.button4.Text = "Transferir";[m
+[32m+[m[32m            this.button4.UseVisualStyleBackColor = true;[m
+[32m+[m[32m            this.button4.Click += new System.EventHandler(this.button4_Click);[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // button3[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.button3.Location = new System.Drawing.Point(59, 270);[m
+[32m+[m[32m            this.button3.Name = "button3";[m
+[32m+[m[32m            this.button3.Size = new System.Drawing.Size(176, 23);[m
+[32m+[m[32m            this.button3.TabIndex = 10;[m
+[32m+[m[32m            this.button3.Text = "Teste Equals e ToString";[m
+[32m+[m[32m            this.button3.UseVisualStyleBackColor = true;[m
+[32m+[m[32m            this.button3.Click += new System.EventHandler(this.testeEquals_click);[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            // Form1[m
+[32m+[m[32m            //[m[41m [m
+[32m+[m[32m            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);[m
+[32m+[m[32m            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;[m
+[32m+[m[32m            this.ClientSize = new System.Drawing.Size(284, 353);[m
+[32m+[m[32m            this.Controls.Add(this.button3);[m
+[32m+[m[32m            this.Controls.Add(this.button4);[m
+[32m+[m[32m            this.Controls.Add(this.destinoDaTransferencia);[m
+[32m+[m[32m            this.Controls.Add(this.comboContas);[m
+[32m+[m[32m            this.Controls.Add(this.button2);[m
+[32m+[m[32m            this.Controls.Add(this.button1);[m
+[32m+[m[32m            this.Controls.Add(this.valorOperacao);[m
+[32m+[m[32m            this.Controls.Add(this.textoSaldo);[m
+[32m+[m[32m            this.Controls.Add(this.textoNumero);[m
+[32m+[m[32m            this.Controls.Add(this.textoTitular);[m
+[32m+[m[32m            this.Name = "Form1";[m
+[32m+[m[32m            this.Text = "Form1";[m
+[32m+[m[32m            this.Load += new System.EventHandler(this.Form1_Load);[m
+[32m+[m[32m            this.ResumeLayout(false);[m
+[32m+[m[32m            this.PerformLayout();[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        #endregion[m
+[32m+[m
+[32m+[m[32m        private System.Windows.Forms.TextBox textoTitular;[m
+[32m+[m[32m        private System.Windows.Forms.TextBox textoNumero;[m
+[32m+[m[32m        private System.Windows.Forms.TextBox textoSaldo;[m
+[32m+[m[32m        private System.Windows.Forms.TextBox valorOperacao;[m
+[32m+[m[32m        private System.Windows.Forms.Button button1;[m
+[32m+[m[32m        private System.Windows.Forms.Button button2;[m
+[32m+[m[32m        private System.Windows.Forms.ComboBox comboContas;[m
+[32m+[m[32m        private System.Windows.Forms.ComboBox destinoDaTransferencia;[m
+[32m+[m[32m        private System.Windows.Forms.Button button4;[m
+[32m+[m[32m        private System.Windows.Forms.Button button3;[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[1mdiff --git a/CaixaEletronico/Form1.cs b/CaixaEletronico/Form1.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9bdc082[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Form1.cs[m
+[36m@@ -0,0 +1,140 @@[m
+[32m+[m[32m﻿using Caelum.CaixaEletronico.Modelo;[m
+[32m+[m[32musing Caelum.CaixaEletronico.Modelo.Contas;[m
+[32m+[m[32musing Caelum.CaixaEletronico.Modelo.Usuarios;[m
+[32m+[m[32musing System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.ComponentModel;[m
+[32m+[m[32musing System.Data;[m
+[32m+[m[32musing System.Drawing;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m[32musing System.Windows.Forms;[m
+[32m+[m
+[32m+[m[32mnamespace CaixaEletronico[m
+[32m+[m[32m{[m
+[32m+[m[32m    public partial class Form1 : Form[m
+[32m+[m[32m    {[m
+[32m+[m[32m        Conta [] contas;[m
+[32m+[m
+[32m+[m[32m        public Form1()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            InitializeComponent();[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        private void Form1_Load(object sender, EventArgs e)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            contas = new Conta[3];[m
+[32m+[m
+[32m+[m[32m            Conta contaDoVictor = new ContaCorrente();[m
+[32m+[m[32m            contaDoVictor.Titular = new Cliente();[m
+[32m+[m[32m            contaDoVictor.Titular.Nome = "Victor";[m
+[32m+[m[32m            contaDoVictor.Numero = 1;[m
+[32m+[m[32m            contas[0] = contaDoVictor;[m
+[32m+[m
+[32m+[m[32m            Conta contaDoGuilherme = new ContaPoupanca();[m
+[32m+[m[32m            contaDoGuilherme.Titular = new Cliente();[m
+[32m+[m[32m            contaDoGuilherme.Titular.Nome = "Guilherme";[m
+[32m+[m[32m            contaDoGuilherme.Numero = 2;[m
+[32m+[m[32m            contas[1] = contaDoGuilherme;[m
+[32m+[m
+[32m+[m[32m            Conta contaDoMauricio = new ContaInvestimento();[m
+[32m+[m[32m            contaDoMauricio.Titular = new Cliente();[m
+[32m+[m[32m            contaDoMauricio.Titular.Nome = "Mauricio";[m
+[32m+[m[32m            contaDoMauricio.Numero = 3;[m
+[32m+[m[32m            contas[2] = contaDoMauricio;[m
+[32m+[m
+[32m+[m[32m            foreach (Conta conta in this.contas)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                comboContas.Items.Add(conta);[m
+[32m+[m[32m                destinoDaTransferencia.Items.Add(conta);[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        private void button1_Click(object sender, EventArgs e)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            string textoValorSaque = valorOperacao.Text;[m
+[32m+[m
+[32m+[m[32m            double valorDeposito = Convert.ToDouble(textoValorSaque);[m
+[32m+[m
+[32m+[m[32m            int indiceSelecionado = comboContas.SelectedIndex;[m
+[32m+[m
+[32m+[m[32m            Conta contaSelecionada = this.contas[indiceSelecionado];[m
+[32m+[m[32m            contaSelecionada.Deposita(valorDeposito);[m
+[32m+[m
+[32m+[m[32m            this.MostraConta(contaSelecionada);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        private void button2_Click(object sender, EventArgs eA)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            string textoValorSaque = valorOperacao.Text;[m
+[32m+[m
+[32m+[m[32m            double valorSaque = Convert.ToDouble(textoValorSaque);[m
+[32m+[m[32m            Conta contaSelecionada = this.BuscaContaSelecionada();[m
+[32m+[m
+[32m+[m[32m            try {[m[41m [m
+[32m+[m[32m                contaSelecionada.Saca(valorSaque);[m
+[32m+[m[32m                MessageBox.Show("Dinheiro Liberado");[m
+[32m+[m[32m            }[m
+[32m+[m[32m            catch (SaldoInsuficienteException e)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                MessageBox.Show("Saldo insuficiente. " + e.Message);[m
+[32m+[m[32m            }[m
+[32m+[m[32m            catch (ArgumentException e)[m
+[32m+[m[32m            {[m
+[32m+[m[32m                MessageBox.Show("Não é possível sacar um valor negativo. " + e.Message);[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            this.MostraConta(contaSelecionada);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        private void MostraConta(Conta conta)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            textoTitular.Text = conta.Titular.Nome;[m
+[32m+[m[32m            textoSaldo.Text = Convert.ToString(conta.Saldo);[m
+[32m+[m[32m            textoNumero.Text = Convert.ToString(conta.Numero);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        private Conta BuscaContaSelecionada()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            int indiceSelecionado = comboContas.SelectedIndex;[m
+[32m+[m[32m            return this.contas[indiceSelecionado];[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            string titularSelecionado = comboContas.Text;[m
+[32m+[m[32m            Conta contaSelecionada = this.BuscaContaSelecionada();[m
+[32m+[m[32m            this.MostraConta(contaSelecionada);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        private void button4_Click(object sender, EventArgs e)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            Conta contaSelecionada = this.BuscaContaSelecionada();[m
+[32m+[m[41m  [m
+[32m+[m[32m            int indiceDaContaDestino = destinoDaTransferencia.SelectedIndex;[m
+[32m+[m
+[32m+[m[32m            Conta contaDestino = this.contas[indiceDaContaDestino];[m
+[32m+[m
+[32m+[m[32m            string textoValor = valorOperacao.Text;[m
+[32m+[m[32m            double valorTransferencia = Convert.ToDouble(textoValor);[m
+[32m+[m[41m        [m
+[32m+[m[32m            contaSelecionada.TransferePara(contaDestino, valorTransferencia);[m
+[32m+[m
+[32m+[m[32m            this.MostraConta(contaSelecionada);[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        private void testeEquals_click(object sender, EventArgs e)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            Cliente guilherme = new Cliente("Guilherme");[m
+[32m+[m[32m            guilherme.Rg = "12345678-9";[m
+[32m+[m
+[32m+[m[32m            Cliente paulo = new Cliente("Paulo");[m
+[32m+[m[32m            paulo.Rg = "12345678-9";[m
+[32m+[m[32m            //paulo.Rg = "98765432-1"; teste diferente[m
+[32m+[m[32m            MessageBox.Show(guilherme.ToString() + "\n é igual a \n" + paulo.ToString() + " ? \n\n" + guilherme.Equals(paulo));[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/Form1.resx b/CaixaEletronico/Form1.resx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1af7de1[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Form1.resx[m
+[36m@@ -0,0 +1,120 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8"?>[m
+[32m+[m[32m<root>[m
+[32m+[m[32m  <!--[m[41m [m
+[32m+[m[32m    Microsoft ResX Schema[m[41m [m
+[32m+[m[41m    [m
+[32m+[m[32m    Version 2.0[m
+[32m+[m[41m    [m
+[32m+[m[32m    The primary goals of this format is to allow a simple XML format[m[41m [m
+[32m+[m[32m    that is mostly human readable. The generation and parsing of the[m[41m [m
+[32m+[m[32m    various data types are done through the TypeConverter classes[m[41m [m
+[32m+[m[32m    associated with the data types.[m
+[32m+[m[41m    [m
+[32m+[m[32m    Example:[m
+[32m+[m[41m    [m
+[32m+[m[32m    ... ado.net/XML headers & schema ...[m
+[32m+[m[32m    <resheader name="resmimetype">text/microsoft-resx</resheader>[m
+[32m+[m[32m    <resheader name="version">2.0</resheader>[m
+[32m+[m[32m    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>[m
+[32m+[m[32m    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>[m
+[32m+[m[32m    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>[m
+[32m+[m[32m    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>[m
+[32m+[m[32m    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">[m
+[32m+[m[32m        <value>[base64 mime encoded serialized .NET Framework object]</value>[m
+[32m+[m[32m    </data>[m
+[32m+[m[32m    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">[m
+[32m+[m[32m        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>[m
+[32m+[m[32m        <comment>This is a comment</comment>[m
+[32m+[m[32m    </data>[m
+[32m+[m[41m                [m
+[32m+[m[32m    There are any number of "resheader" rows that contain simple[m[41m [m
+[32m+[m[32m    name/value pairs.[m
+[32m+[m[41m    [m
+[32m+[m[32m    Each data row contains a name, and value. The row also contains a[m[41m [m
+[32m+[m[32m    type or mimetype. Type corresponds to a .NET class that support[m[41m [m
+[32m+[m[32m    text/value conversion through the TypeConverter architecture.[m[41m [m
+[32m+[m[32m    Classes that don't support this are serialized and stored with the[m[41m [m
+[32m+[m[32m    mimetype set.[m
+[32m+[m[41m    [m
+[32m+[m[32m    The mimetype is used for serialized objects, and tells the[m[41m [m
+[32m+[m[32m    ResXResourceReader how to depersist the object. This is currently not[m[41m [m
+[32m+[m[32m    extensible. For a given mimetype the value must be set accordingly:[m
+[32m+[m[41m    [m
+[32m+[m[32m    Note - application/x-microsoft.net.object.binary.base64 is the format[m[41m [m
+[32m+[m[32m    that the ResXResourceWriter will generate, however the reader can[m[41m [m
+[32m+[m[32m    read any of the formats listed below.[m
+[32m+[m[41m    [m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.binary.base64[m
+[32m+[m[32m    value   : The object must be serialized with[m[41m [m
+[32m+[m[32m            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m[41m    [m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.soap.base64[m
+[32m+[m[32m    value   : The object must be serialized with[m[41m [m
+[32m+[m[32m            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.bytearray.base64[m
+[32m+[m[32m    value   : The object must be serialized into a byte array[m[41m [m
+[32m+[m[32m            : using a System.ComponentModel.TypeConverter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m[32m    -->[m
+[32m+[m[32m  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">[m
+[32m+[m[32m    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />[m
+[32m+[m[32m    <xsd:element name="root" msdata:IsDataSet="true">[m
+[32m+[m[32m      <xsd:complexType>[m
+[32m+[m[32m        <xsd:choice maxOccurs="unbounded">[m
+[32m+[m[32m          <xsd:element name="metadata">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" use="required" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="type" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="mimetype" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute ref="xml:space" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="assembly">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:attribute name="alias" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="data">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />[m
+[32m+[m[32m                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />[m
+[32m+[m[32m              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />[m
+[32m+[m[32m              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />[m
+[32m+[m[32m              <xsd:attribute ref="xml:space" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="resheader">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" use="required" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m        </xsd:choice>[m
+[32m+[m[32m      </xsd:complexType>[m
+[32m+[m[32m    </xsd:element>[m
+[32m+[m[32m  </xsd:schema>[m
+[32m+[m[32m  <resheader name="resmimetype">[m
+[32m+[m[32m    <value>text/microsoft-resx</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="version">[m
+[32m+[m[32m    <value>2.0</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="reader">[m
+[32m+[m[32m    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="writer">[m
+[32m+[m[32m    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m</root>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/GerenciadorDeImposto.cs b/CaixaEletronico/GerenciadorDeImposto.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..61fe6ec[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/GerenciadorDeImposto.cs[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m﻿using Caelum.CaixaEletronico.Modelo;[m
+[32m+[m[32musing System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Gerenciadores[m
+[32m+[m[32m{[m
+[32m+[m[32m    class GerenciadorDeImposto[m
+[32m+[m[32m    {[m
+[32m+[m[32m        public double Total { get; private set; }[m
+[32m+[m[32m        public void Adiciona(ITributavel tributavel)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            this.Total += tributavel.CalculaTributo();[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/ITributavel.cs b/CaixaEletronico/ITributavel.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9b8e31a[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/ITributavel.cs[m
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m﻿using System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo[m
+[32m+[m[32m{[m
+[32m+[m[32m    interface ITributavel[m
+[32m+[m[32m    {[m
+[32m+[m[32m        double CalculaTributo();[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/Program.cs b/CaixaEletronico/Program.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8d4a810[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Program.cs[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m﻿using CaixaEletronico;[m
+[32m+[m[32musing System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m[32musing System.Windows.Forms;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico[m
+[32m+[m[32m{[m
+[32m+[m[32m    static class Program[m
+[32m+[m[32m    {[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        /// The main entry point for the application.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        [STAThread][m
+[32m+[m[32m        static void Main()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            Application.EnableVisualStyles();[m
+[32m+[m[32m            Application.SetCompatibleTextRenderingDefault(false);[m
+[32m+[m[32m            Application.Run(new Form1());[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/Properties/AssemblyInfo.cs b/CaixaEletronico/Properties/AssemblyInfo.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5db8b99[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Properties/AssemblyInfo.cs[m
+[36m@@ -0,0 +1,36 @@[m
+[32m+[m[32m﻿using System.Reflection;[m
+[32m+[m[32musing System.Runtime.CompilerServices;[m
+[32m+[m[32musing System.Runtime.InteropServices;[m
+[32m+[m
+[32m+[m[32m// General Information about an assembly is controlled through the following[m[41m [m
+[32m+[m[32m// set of attributes. Change these attribute values to modify the information[m
+[32m+[m[32m// associated with an assembly.[m
+[32m+[m[32m[assembly: AssemblyTitle("CaixaEletronico")][m
+[32m+[m[32m[assembly: AssemblyDescription("")][m
+[32m+[m[32m[assembly: AssemblyConfiguration("")][m
+[32m+[m[32m[assembly: AssemblyCompany("")][m
+[32m+[m[32m[assembly: AssemblyProduct("CaixaEletronico")][m
+[32m+[m[32m[assembly: AssemblyCopyright("Copyright ©  2016")][m
+[32m+[m[32m[assembly: AssemblyTrademark("")][m
+[32m+[m[32m[assembly: AssemblyCulture("")][m
+[32m+[m
+[32m+[m[32m// Setting ComVisible to false makes the types in this assembly not visible[m[41m [m
+[32m+[m[32m// to COM components.  If you need to access a type in this assembly from[m[41m [m
+[32m+[m[32m// COM, set the ComVisible attribute to true on that type.[m
+[32m+[m[32m[assembly: ComVisible(false)][m
+[32m+[m
+[32m+[m[32m// The following GUID is for the ID of the typelib if this project is exposed to COM[m
+[32m+[m[32m[assembly: Guid("7fc57d83-e5e5-41cc-9897-20f578830fee")][m
+[32m+[m
+[32m+[m[32m// Version information for an assembly consists of the following four values:[m
+[32m+[m[32m//[m
+[32m+[m[32m//      Major Version[m
+[32m+[m[32m//      Minor Version[m[41m [m
+[32m+[m[32m//      Build Number[m
+[32m+[m[32m//      Revision[m
+[32m+[m[32m//[m
+[32m+[m[32m// You can specify all the values or you can default the Build and Revision Numbers[m[41m [m
+[32m+[m[32m// by using the '*' as shown below:[m
+[32m+[m[32m// [assembly: AssemblyVersion("1.0.*")][m
+[32m+[m[32m[assembly: AssemblyVersion("1.0.0.0")][m
+[32m+[m[32m[assembly: AssemblyFileVersion("1.0.0.0")][m
+[1mdiff --git a/CaixaEletronico/Properties/Resources.Designer.cs b/CaixaEletronico/Properties/Resources.Designer.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..91e9b22[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Properties/Resources.Designer.cs[m
+[36m@@ -0,0 +1,71 @@[m
+[32m+[m[32m﻿//------------------------------------------------------------------------------[m
+[32m+[m[32m// <auto-generated>[m
+[32m+[m[32m//     This code was generated by a tool.[m
+[32m+[m[32m//     Runtime Version:4.0.30319.42000[m
+[32m+[m[32m//[m
+[32m+[m[32m//     Changes to this file may cause incorrect behavior and will be lost if[m
+[32m+[m[32m//     the code is regenerated.[m
+[32m+[m[32m// </auto-generated>[m
+[32m+[m[32m//------------------------------------------------------------------------------[m
+[32m+[m
+[32m+[m[32mnamespace CaixaEletronico.Properties[m
+[32m+[m[32m{[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    /// <summary>[m
+[32m+[m[32m    ///   A strongly-typed resource class, for looking up localized strings, etc.[m
+[32m+[m[32m    /// </summary>[m
+[32m+[m[32m    // This class was auto-generated by the StronglyTypedResourceBuilder[m
+[32m+[m[32m    // class via a tool like ResGen or Visual Studio.[m
+[32m+[m[32m    // To add or remove a member, edit your .ResX file then rerun ResGen[m
+[32m+[m[32m    // with the /str option, or rebuild your VS project.[m
+[32m+[m[32m    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")][m
+[32m+[m[32m    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()][m
+[32m+[m[32m    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()][m
+[32m+[m[32m    internal class Resources[m
+[32m+[m[32m    {[m
+[32m+[m
+[32m+[m[32m        private static global::System.Resources.ResourceManager resourceMan;[m
+[32m+[m
+[32m+[m[32m        private static global::System.Globalization.CultureInfo resourceCulture;[m
+[32m+[m
+[32m+[m[32m        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")][m
+[32m+[m[32m        internal Resources()[m
+[32m+[m[32m        {[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        ///   Returns the cached ResourceManager instance used by this class.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)][m
+[32m+[m[32m        internal static global::System.Resources.ResourceManager ResourceManager[m
+[32m+[m[32m        {[m
+[32m+[m[32m            get[m
+[32m+[m[32m            {[m
+[32m+[m[32m                if ((resourceMan == null))[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CaixaEletronico.Properties.Resources", typeof(Resources).Assembly);[m
+[32m+[m[32m                    resourceMan = temp;[m
+[32m+[m[32m                }[m
+[32m+[m[32m                return resourceMan;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        ///   Overrides the current thread's CurrentUICulture property for all[m
+[32m+[m[32m        ///   resource lookups using this strongly typed resource class.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)][m
+[32m+[m[32m        internal static global::System.Globalization.CultureInfo Culture[m
+[32m+[m[32m        {[m
+[32m+[m[32m            get[m
+[32m+[m[32m            {[m
+[32m+[m[32m                return resourceCulture;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            set[m
+[32m+[m[32m            {[m
+[32m+[m[32m                resourceCulture = value;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/Properties/Resources.resx b/CaixaEletronico/Properties/Resources.resx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..af7dbeb[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Properties/Resources.resx[m
+[36m@@ -0,0 +1,117 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8"?>[m
+[32m+[m[32m<root>[m
+[32m+[m[32m  <!--[m[41m [m
+[32m+[m[32m    Microsoft ResX Schema[m[41m [m
+[32m+[m[41m    [m
+[32m+[m[32m    Version 2.0[m
+[32m+[m[41m    [m
+[32m+[m[32m    The primary goals of this format is to allow a simple XML format[m[41m [m
+[32m+[m[32m    that is mostly human readable. The generation and parsing of the[m[41m [m
+[32m+[m[32m    various data types are done through the TypeConverter classes[m[41m [m
+[32m+[m[32m    associated with the data types.[m
+[32m+[m[41m    [m
+[32m+[m[32m    Example:[m
+[32m+[m[41m    [m
+[32m+[m[32m    ... ado.net/XML headers & schema ...[m
+[32m+[m[32m    <resheader name="resmimetype">text/microsoft-resx</resheader>[m
+[32m+[m[32m    <resheader name="version">2.0</resheader>[m
+[32m+[m[32m    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>[m
+[32m+[m[32m    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>[m
+[32m+[m[32m    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>[m
+[32m+[m[32m    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>[m
+[32m+[m[32m    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">[m
+[32m+[m[32m        <value>[base64 mime encoded serialized .NET Framework object]</value>[m
+[32m+[m[32m    </data>[m
+[32m+[m[32m    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">[m
+[32m+[m[32m        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>[m
+[32m+[m[32m        <comment>This is a comment</comment>[m
+[32m+[m[32m    </data>[m
+[32m+[m[41m                [m
+[32m+[m[32m    There are any number of "resheader" rows that contain simple[m[41m [m
+[32m+[m[32m    name/value pairs.[m
+[32m+[m[41m    [m
+[32m+[m[32m    Each data row contains a name, and value. The row also contains a[m[41m [m
+[32m+[m[32m    type or mimetype. Type corresponds to a .NET class that support[m[41m [m
+[32m+[m[32m    text/value conversion through the TypeConverter architecture.[m[41m [m
+[32m+[m[32m    Classes that don't support this are serialized and stored with the[m[41m [m
+[32m+[m[32m    mimetype set.[m
+[32m+[m[41m    [m
+[32m+[m[32m    The mimetype is used for serialized objects, and tells the[m[41m [m
+[32m+[m[32m    ResXResourceReader how to depersist the object. This is currently not[m[41m [m
+[32m+[m[32m    extensible. For a given mimetype the value must be set accordingly:[m
+[32m+[m[41m    [m
+[32m+[m[32m    Note - application/x-microsoft.net.object.binary.base64 is the format[m[41m [m
+[32m+[m[32m    that the ResXResourceWriter will generate, however the reader can[m[41m [m
+[32m+[m[32m    read any of the formats listed below.[m
+[32m+[m[41m    [m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.binary.base64[m
+[32m+[m[32m    value   : The object must be serialized with[m[41m [m
+[32m+[m[32m            : System.Serialization.Formatters.Binary.BinaryFormatter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m[41m    [m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.soap.base64[m
+[32m+[m[32m    value   : The object must be serialized with[m[41m [m
+[32m+[m[32m            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.bytearray.base64[m
+[32m+[m[32m    value   : The object must be serialized into a byte array[m[41m [m
+[32m+[m[32m            : using a System.ComponentModel.TypeConverter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m[32m    -->[m
+[32m+[m[32m  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">[m
+[32m+[m[32m    <xsd:element name="root" msdata:IsDataSet="true">[m
+[32m+[m[32m      <xsd:complexType>[m
+[32m+[m[32m        <xsd:choice maxOccurs="unbounded">[m
+[32m+[m[32m          <xsd:element name="metadata">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="type" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="mimetype" type="xsd:string" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="assembly">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:attribute name="alias" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="data">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />[m
+[32m+[m[32m                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />[m
+[32m+[m[32m              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />[m
+[32m+[m[32m              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="resheader">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" use="required" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m        </xsd:choice>[m
+[32m+[m[32m      </xsd:complexType>[m
+[32m+[m[32m    </xsd:element>[m
+[32m+[m[32m  </xsd:schema>[m
+[32m+[m[32m  <resheader name="resmimetype">[m
+[32m+[m[32m    <value>text/microsoft-resx</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="version">[m
+[32m+[m[32m    <value>2.0</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="reader">[m
+[32m+[m[32m    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="writer">[m
+[32m+[m[32m    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m</root>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/Properties/Settings.Designer.cs b/CaixaEletronico/Properties/Settings.Designer.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0a76e15[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Properties/Settings.Designer.cs[m
+[36m@@ -0,0 +1,30 @@[m
+[32m+[m[32m﻿//------------------------------------------------------------------------------[m
+[32m+[m[32m// <auto-generated>[m
+[32m+[m[32m//     This code was generated by a tool.[m
+[32m+[m[32m//     Runtime Version:4.0.30319.42000[m
+[32m+[m[32m//[m
+[32m+[m[32m//     Changes to this file may cause incorrect behavior and will be lost if[m
+[32m+[m[32m//     the code is regenerated.[m
+[32m+[m[32m// </auto-generated>[m
+[32m+[m[32m//------------------------------------------------------------------------------[m
+[32m+[m
+[32m+[m[32mnamespace CaixaEletronico.Properties[m
+[32m+[m[32m{[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()][m
+[32m+[m[32m    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")][m
+[32m+[m[32m    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase[m
+[32m+[m[32m    {[m
+[32m+[m
+[32m+[m[32m        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));[m
+[32m+[m
+[32m+[m[32m        public static Settings Default[m
+[32m+[m[32m        {[m
+[32m+[m[32m            get[m
+[32m+[m[32m            {[m
+[32m+[m[32m                return defaultInstance;[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/Properties/Settings.settings b/CaixaEletronico/Properties/Settings.settings[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3964565[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/Properties/Settings.settings[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m[32m﻿<?xml version='1.0' encoding='utf-8'?>[m
+[32m+[m[32m<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">[m
+[32m+[m[32m  <Profiles>[m
+[32m+[m[32m    <Profile Name="(Default)" />[m
+[32m+[m[32m  </Profiles>[m
+[32m+[m[32m  <Settings />[m
+[32m+[m[32m</SettingsFile>[m
+[1mdiff --git a/CaixaEletronico/SaldoInsuficienteException.cs b/CaixaEletronico/SaldoInsuficienteException.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fff2fe9[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/SaldoInsuficienteException.cs[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32m﻿using System;[m
+[32m+[m[32musing System.Collections.Generic;[m
+[32m+[m[32musing System.Linq;[m
+[32m+[m[32musing System.Text;[m
+[32m+[m[32musing System.Threading.Tasks;[m
+[32m+[m
+[32m+[m[32mnamespace Caelum.CaixaEletronico.Modelo[m
+[32m+[m[32m{[m
+[32m+[m[32m    class SaldoInsuficienteException : Exception[m
+[32m+[m[32m    {[m
+[32m+[m[32m        public SaldoInsuficienteException(string message) : base(message)[m
+[32m+[m[32m        {[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/CaixaEletronico/bin/Debug/CaixaEletronico.exe b/CaixaEletronico/bin/Debug/CaixaEletronico.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..22b152a[m
+Binary files /dev/null and b/CaixaEletronico/bin/Debug/CaixaEletronico.exe differ
+[1mdiff --git a/CaixaEletronico/bin/Debug/CaixaEletronico.exe.config b/CaixaEletronico/bin/Debug/CaixaEletronico.exe.config[m
+[1mnew file mode 100644[m
+[1mindex 0000000..88fa402[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/bin/Debug/CaixaEletronico.exe.config[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8" ?>[m
+[32m+[m[32m<configuration>[m
+[32m+[m[32m    <startup>[m[41m [m
+[32m+[m[32m        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />[m
+[32m+[m[32m    </startup>[m
+[32m+[m[32m</configuration>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/bin/Debug/CaixaEletronico.pdb b/CaixaEletronico/bin/Debug/CaixaEletronico.pdb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..361482f[m
+Binary files /dev/null and b/CaixaEletronico/bin/Debug/CaixaEletronico.pdb differ
+[1mdiff --git a/CaixaEletronico/bin/Debug/CaixaEletronico.vshost.exe b/CaixaEletronico/bin/Debug/CaixaEletronico.vshost.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..681ab77[m
+Binary files /dev/null and b/CaixaEletronico/bin/Debug/CaixaEletronico.vshost.exe differ
+[1mdiff --git a/CaixaEletronico/bin/Debug/CaixaEletronico.vshost.exe.config b/CaixaEletronico/bin/Debug/CaixaEletronico.vshost.exe.config[m
+[1mnew file mode 100644[m
+[1mindex 0000000..88fa402[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/bin/Debug/CaixaEletronico.vshost.exe.config[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8" ?>[m
+[32m+[m[32m<configuration>[m
+[32m+[m[32m    <startup>[m[41m [m
+[32m+[m[32m        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />[m
+[32m+[m[32m    </startup>[m
+[32m+[m[32m</configuration>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/bin/Release/CaixaEletronico.exe b/CaixaEletronico/bin/Release/CaixaEletronico.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5fb8b49[m
+Binary files /dev/null and b/CaixaEletronico/bin/Release/CaixaEletronico.exe differ
+[1mdiff --git a/CaixaEletronico/bin/Release/CaixaEletronico.exe.config b/CaixaEletronico/bin/Release/CaixaEletronico.exe.config[m
+[1mnew file mode 100644[m
+[1mindex 0000000..88fa402[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/bin/Release/CaixaEletronico.exe.config[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8" ?>[m
+[32m+[m[32m<configuration>[m
+[32m+[m[32m    <startup>[m[41m [m
+[32m+[m[32m        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />[m
+[32m+[m[32m    </startup>[m
+[32m+[m[32m</configuration>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/bin/Release/CaixaEletronico.pdb b/CaixaEletronico/bin/Release/CaixaEletronico.pdb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c0959ea[m
+Binary files /dev/null and b/CaixaEletronico/bin/Release/CaixaEletronico.pdb differ
+[1mdiff --git a/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe b/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..681ab77[m
+Binary files /dev/null and b/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe differ
+[1mdiff --git a/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe.config b/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe.config[m
+[1mnew file mode 100644[m
+[1mindex 0000000..88fa402[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/bin/Release/CaixaEletronico.vshost.exe.config[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8" ?>[m
+[32m+[m[32m<configuration>[m
+[32m+[m[32m    <startup>[m[41m [m
+[32m+[m[32m        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />[m
+[32m+[m[32m    </startup>[m
+[32m+[m[32m</configuration>[m
+\ No newline at end of file[m
+[1mdiff --git a/CaixaEletronico/obj/Debug/CaixaEletronico.Form1.resources b/CaixaEletronico/obj/Debug/CaixaEletronico.Form1.resources[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6c05a97[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/CaixaEletronico.Form1.resources differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/CaixaEletronico.Properties.Resources.resources b/CaixaEletronico/obj/Debug/CaixaEletronico.Properties.Resources.resources[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6c05a97[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/CaixaEletronico.Properties.Resources.resources differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/CaixaEletronico.csproj.FileListAbsolute.txt b/CaixaEletronico/obj/Debug/CaixaEletronico.csproj.FileListAbsolute.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..94fcfb8[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/obj/Debug/CaixaEletronico.csproj.FileListAbsolute.txt[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe.config[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.exe[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\bin\Debug\CaixaEletronico.pdb[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Form1.resources[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.Properties.Resources.resources[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csproj.GenerateResource.Cache[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.exe[m
+[32m+[m[32mc:\users\caelum\documents\visual studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.pdb[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Debug\CaixaEletronico.csprojResolveAssemblyReference.cache[m
+[1mdiff --git a/CaixaEletronico/obj/Debug/CaixaEletronico.csproj.GenerateResource.Cache b/CaixaEletronico/obj/Debug/CaixaEletronico.csproj.GenerateResource.Cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9d093df[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/CaixaEletronico.csproj.GenerateResource.Cache differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/CaixaEletronico.csprojResolveAssemblyReference.cache b/CaixaEletronico/obj/Debug/CaixaEletronico.csprojResolveAssemblyReference.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..73c7c37[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/CaixaEletronico.csprojResolveAssemblyReference.cache differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/CaixaEletronico.exe b/CaixaEletronico/obj/Debug/CaixaEletronico.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..22b152a[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/CaixaEletronico.exe differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/CaixaEletronico.pdb b/CaixaEletronico/obj/Debug/CaixaEletronico.pdb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..361482f[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/CaixaEletronico.pdb differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/DesignTimeResolveAssemblyReferences.cache b/CaixaEletronico/obj/Debug/DesignTimeResolveAssemblyReferences.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2a1057c[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/DesignTimeResolveAssemblyReferences.cache differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache b/CaixaEletronico/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..614cfc5[m
+Binary files /dev/null and b/CaixaEletronico/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache differ
+[1mdiff --git a/CaixaEletronico/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs b/CaixaEletronico/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/CaixaEletronico/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs b/CaixaEletronico/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/CaixaEletronico/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs b/CaixaEletronico/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.Form1.resources b/CaixaEletronico/obj/Release/CaixaEletronico.Form1.resources[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6c05a97[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/CaixaEletronico.Form1.resources differ
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.Properties.Resources.resources b/CaixaEletronico/obj/Release/CaixaEletronico.Properties.Resources.resources[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6c05a97[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/CaixaEletronico.Properties.Resources.resources differ
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.csproj.FileListAbsolute.txt b/CaixaEletronico/obj/Release/CaixaEletronico.csproj.FileListAbsolute.txt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e740834[m
+[1m--- /dev/null[m
+[1m+++ b/CaixaEletronico/obj/Release/CaixaEletronico.csproj.FileListAbsolute.txt[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\bin\Release\CaixaEletronico.exe.config[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\bin\Release\CaixaEletronico.exe[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\bin\Release\CaixaEletronico.pdb[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.csprojResolveAssemblyReference.cache[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.Form1.resources[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.Properties.Resources.resources[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.csproj.GenerateResource.Cache[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.exe[m
+[32m+[m[32mC:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletronico\obj\Release\CaixaEletronico.pdb[m
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.csproj.GenerateResource.Cache b/CaixaEletronico/obj/Release/CaixaEletronico.csproj.GenerateResource.Cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2af3689[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/CaixaEletronico.csproj.GenerateResource.Cache differ
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.csprojResolveAssemblyReference.cache b/CaixaEletronico/obj/Release/CaixaEletronico.csprojResolveAssemblyReference.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..73c7c37[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/CaixaEletronico.csprojResolveAssemblyReference.cache differ
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.exe b/CaixaEletronico/obj/Release/CaixaEletronico.exe[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5fb8b49[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/CaixaEletronico.exe differ
+[1mdiff --git a/CaixaEletronico/obj/Release/CaixaEletronico.pdb b/CaixaEletronico/obj/Release/CaixaEletronico.pdb[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c0959ea[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/CaixaEletronico.pdb differ
+[1mdiff --git a/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferences.cache b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferences.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2a1057c[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferences.cache differ
+[1mdiff --git a/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..472fda9[m
+Binary files /dev/null and b/CaixaEletronico/obj/Release/DesignTimeResolveAssemblyReferencesInput.cache differ
+[1mdiff --git a/CaixaEletronico/obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs b/CaixaEletronico/obj/Release/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/CaixaEletronico/obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs b/CaixaEletronico/obj/Release/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/CaixaEletronico/obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs b/CaixaEletronico/obj/Release/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m

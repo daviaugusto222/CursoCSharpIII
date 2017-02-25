@@ -136,5 +136,10 @@ namespace CaixaEletronico
             //paulo.Rg = "98765432-1"; teste diferente
             MessageBox.Show(guilherme.ToString() + "\n é igual a \n" + paulo.ToString() + " ? \n\n" + guilherme.Equals(paulo));
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //inplementar
+        }
     }
 }
