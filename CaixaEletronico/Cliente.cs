@@ -2,7 +2,7 @@
 
 namespace Caelum.CaixaEletronico.Modelo.Usuarios
 {
-        class Cliente
+        public class Cliente
         {
             public string Nome { get; set; }
             public string Rg { get; set; }
@@ -39,10 +39,13 @@ namespace Caelum.CaixaEletronico.Modelo.Usuarios
                 Cliente outroCliente = (Cliente)objeto;
                 return this.Rg == outroCliente.Rg;
             }
+  
 
-            public override string ToString()
+             public override string ToString()
                 {
                     return "Nome: " + this.Nome + " RG: " + this.Rg;
                 }
             }
+
+         
 }

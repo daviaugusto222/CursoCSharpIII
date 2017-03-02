@@ -10,3 +10,6 @@ C:\Users\caelum\Documents\Visual Studio 2015\Projects\CaixaEletronico\CaixaEletr
 C:\Users\davia\cursoCSharpIII\CaixaEletronico\bin\Release\CaixaEletronico.exe.config
 C:\Users\davia\cursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.exe
 C:\Users\davia\cursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.pdb
+C:\Users\davidaugusto\CursoCSharpIII\CaixaEletronico\bin\Release\CaixaEletronico.exe.config
+C:\Users\davidaugusto\CursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.exe
+C:\Users\davidaugusto\CursoCSharpIII\CaixaEletronico\obj\Release\CaixaEletronico.pdb
